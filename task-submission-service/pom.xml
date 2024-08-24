@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.micro</groupId>
-	<artifactId>task-submission-service</artifactId>
+	<artifactId>submission-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>task-submission-service</name>
+	<name>submission-service</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
