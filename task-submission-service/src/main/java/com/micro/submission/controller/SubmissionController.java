@@ -65,12 +65,12 @@ public class SubmissionController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Submission> acceptOrDecline(
-            @PathVariable Long taskId,
+            @PathVariable Long id,
             @RequestParam("status") String status,
             @RequestHeader("Authorization") String jwt) throws Exception {
 
         UserDto userDto = userService.getUserProfile(jwt);
-        Submission submission = submissionService.acceptOrDeclineSubmission(taskId,status);
+        Submission submission = submissionService.acceptOrDeclineSubmission(id,status);
         return new ResponseEntity<>(submission, HttpStatus.OK);
 
     }
